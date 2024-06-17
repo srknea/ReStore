@@ -10,6 +10,9 @@ function App() {
   const theme = createTheme({
     palette: {
       mode: palletType,
+      background:{
+        default: palletType === "light" ? "#eaeaea" : "#121212"
+      }
   }});
 
   function handleThemeChange(){
